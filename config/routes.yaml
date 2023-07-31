@@ -1,3 +1,7 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+about_index:
+   path: /a-propos
+   controller: App\Controller\AboutController::index
+
+homepage_index:
+    path: /
+    controller: App\Controller\HomepageController::index
