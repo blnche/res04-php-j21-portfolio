@@ -5,3 +5,7 @@ about_index:
 homepage_index:
     path: /
     controller: App\Controller\HomepageController::index
+
+projects_index:
+    path: /projects
+    controller: App\Controller\ProjectController::index
