@@ -9,3 +9,7 @@ homepage_index:
 projects_index:
     path: /projects
     controller: App\Controller\ProjectController::index
+
+register_user:
+    path: /register
+    controller: App\Controller\RegistrationController::register
