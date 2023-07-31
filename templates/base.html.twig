@@ -12,11 +12,11 @@
             <div id="sidebar">
                 {% block sidebar %}
                     <ul>
-                        <li><a href="{{ path('homepage_index') }}">Home</a></li>
-                        <li><a href="{{ path('projects_index') }}">Projets</a></li>
+                        <li><a href="{{ path('homepage') }}">Home</a></li>
+                        <li><a href="{{ path('projects') }}">Projets</a></li>
                         <li><a href="{{ path('app_login') }}">Log in</a></li>
-                        <li><a href="{{ path('register_user') }}">Register</a></li>
-                        <li><a href="{{ path('about_index') }}">About</a></li>
+                        <li><a href="{{ path('app_register') }}">Register</a></li>
+                        <li><a href="{{ path('about') }}">About</a></li>
                     </ul>
                 {% endblock %}
             </div>
@@ -24,6 +24,7 @@
             <div id="content">
                 {% block content %}{% endblock %}
             </div>
+            <a href="{{ path('app_logout') }}"> Log out </a>
         {% endblock %}
     </body>
 </html>

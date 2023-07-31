@@ -1,15 +1,43 @@
-about_index:
-   path: /a-propos
-   controller: App\Controller\AboutController::index
-
-homepage_index:
+homepage:
     path: /
     controller: App\Controller\HomepageController::index
 
-projects_index:
-    path: /projects
+about:
+   path: /a-propos
+   controller: App\Controller\AboutController::index
+
+projects:
+    path: /mes-projets
+    controller: App\Controller\
+
+app_register:
+    path: /inscription
+    controller: App\Controller\RegistrationController::register
+
+app_login:
+    path: /connexion
+    controller: App\Controller\LoginController::index
+
+app_logout:
+    path: /logout
+    methods: POST
+
+admin_dashboard:
+    path: /admin
+    controller: App\Controller\
+
+admin_projects_index:
+    path: /admin/projects
     controller: App\Controller\ProjectController::index
 
-register_user:
-    path: /register
-    controller: App\Controller\RegistrationController::register
+admin_project_create:
+    path: /admin/projets/ajouter
+    controller: App\Controller\ProjectController::new
+
+admin_project_edit:
+    path: /admin/projets/{id}/modifier
+    controller: App\Controller\ProjectController::edit
+
+admin_project_show:
+    path: /admin/projets/{id}/details
+    controller: App\Controller\ProjectController::show
