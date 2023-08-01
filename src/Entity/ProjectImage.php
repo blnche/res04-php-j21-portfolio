@@ -4,7 +4,6 @@ namespace App\Entity;
 
 use App\Repository\ProjectImageRepository;
 use Doctrine\ORM\Mapping as ORM;
-use PhpParser\Node\Expr\Cast\String_;
 
 #[ORM\Entity(repositoryClass: ProjectImageRepository::class)]
 class ProjectImage

@@ -39,6 +39,7 @@ class Project
     {
         return (string) $this->getNom();
     }
+    
     public function getId(): ?int
     {
         return $this->id;
