@@ -13,16 +13,22 @@
                 {% block sidebar %}
                     <ul>
                         <li><a href="{{ path('homepage') }}">Home</a></li>
-                        <li><a href="{{ path('projects') }}">Projets</a></li>
-                        <li><a href="{{ path('app_login') }}">Log in</a></li>
-                        <li><a href="{{ path('app_register') }}">Register</a></li>
                         <li><a href="{{ path('about') }}">About</a></li>
+                        <li><a href="{{ path('projects') }}">My Projets</a></li>
                     </ul>
                 {% endblock %}
+
+                <ul>
+                    <li><a href="mailto:blanche.peltier3wa.io">blanche.peltier3wa.io</a></li>
+                    <li><a href="linkedIn.com"><img src="/public/bundles/easyadmin/images/linkedin.svg" alt="Logo linkedIn"></a></li>
+                </ul>
             </div>
 
             <div id="content">
-                {% block content %}{% endblock %}
+                
+                    <h1>Blanche Peltier</h1>
+                    <p>Web Developer</p>
+                
             </div>
             <a href="{{ path('app_logout') }}"> Log out </a>
         {% endblock %}
