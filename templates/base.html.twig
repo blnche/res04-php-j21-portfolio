@@ -20,17 +20,13 @@
 
                 <ul>
                     <li><a href="mailto:blanche.peltier3wa.io">blanche.peltier3wa.io</a></li>
-                    <li><a href="linkedIn.com"><img src="/public/bundles/easyadmin/images/linkedin.svg" alt="Logo linkedIn"></a></li>
+                    <li><a href="linkedIn.com"><img src="{{ asset('images/linkedin.svg') }}" alt="Logo linkedIn"></a></li>
                 </ul>
             </div>
 
             <div id="content">
-                
-                    <h1>Blanche Peltier</h1>
-                    <p>Web Developer</p>
-                
+                {% block content %}{% endblock %}
             </div>
-            <a href="{{ path('app_logout') }}"> Log out </a>
         {% endblock %}
     </body>
 </html>

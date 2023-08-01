@@ -1,7 +1,26 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-    <h1>Homepage</h1>
+    <section>
+        <h1>Blanche Peltier</h1>
+        <p>Web Developer</p>
+    </section>
+    <section>
+        <h2>My last projects</h2>
+        {% for project in projects %}
+        <article>
+            <img>
+            <h3> {{ project.nom }} </h3>
+            <p> {{ project.description }} </p>
+            <ul>
+                <li> {{ project.principal_tech }} </li>
+                <li> {{ project.secondary_tech }} </li>
+            </ul>
+            <a href=" {{ path('/admin/projets/{project.id}/details') }} "></a>
+        </article>
+        {% endfor %}
+        <a href=" {{ path('/mes-projets') }} ">Parcourir tous les projets</a>
+    </section>
 
-    {% block page_contents %}{% endblock %}
+    {% block page_contents %}<p>test</p>{% endblock %}
 {% endblock %}
