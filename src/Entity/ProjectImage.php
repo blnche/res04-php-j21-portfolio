@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\ProjectImageRepository;
 use Doctrine\ORM\Mapping as ORM;
+use PhpParser\Node\Expr\Cast\String_;
 
 #[ORM\Entity(repositoryClass: ProjectImageRepository::class)]
 class ProjectImage
@@ -25,6 +26,11 @@ class ProjectImage
     #[ORM\ManyToOne(inversedBy: 'projectImages')]
     #[ORM\JoinColumn(nullable: false)]
     private ?Project $project_id = null;
+
+    public function __toString(): String
+    {
+        return (string) $this->getTitle();
+    }
 
     public function getId(): ?int
     {

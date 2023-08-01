@@ -24,7 +24,7 @@ app_logout:
 
 admin_dashboard:
     path: /admin
-    controller: App\Controller\
+    controller: App\Controller\Admin\DashboardController::index
 
 admin_projects_index:
     path: /admin/projects
